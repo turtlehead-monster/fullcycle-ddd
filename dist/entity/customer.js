@@ -17,6 +17,9 @@ class Customer {
     get Address() {
         return this._address;
     }
+    set Address(address) {
+        this._address = address;
+    }
     changeName(name) {
         this._name = name;
         this.validate();
@@ -40,6 +43,9 @@ class Customer {
     }
     deactivate() {
         this._active = false;
+    }
+    isActive() {
+        return this._active;
     }
 }
 exports.default = Customer;

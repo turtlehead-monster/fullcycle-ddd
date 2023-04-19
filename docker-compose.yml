@@ -1,0 +1,26 @@
+version: '3.5'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: 'app-fullcycle-ddd'
+    volumes: 
+      - .:/usr/src/app
+    # ports:
+    #   - "8080": "8080"
+    # restart: always
+    command:
+      - sh
+      - -c
+      - |
+        npm install 
+        npm test
+    networks:
+      - fullcycle-network
+
+networks:
+  fullcycle-network:
+    driver: bridge
+

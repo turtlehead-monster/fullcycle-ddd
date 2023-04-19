@@ -11,6 +11,6 @@ const address = new address_1.default("Rua", 13, "77032145", "São Paulo");
 let customer = new customer_1.default("125", "");
 customer.changeAddress(address);
 customer.activate();
-const item1 = new order_item_1.default("12", "Livro", 100.00);
-const item2 = new order_item_1.default("11", "Caderno", 50.00);
+const item1 = new order_item_1.default("12", "Livro", 100.00, "p1", 2);
+const item2 = new order_item_1.default("11", "Caderno", 50.00, "p2", 1);
 const order = new order_1.default("1", "125", [item1, item2]);

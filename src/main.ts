@@ -10,6 +10,6 @@ customer.changeAddress(address);
 customer.activate();
 
 
-const item1  = new OrderItem("12", "Livro", 100.00);
-const item2 = new OrderItem("11", "Caderno", 50.00);
+const item1  = new OrderItem("12", "Livro", 100.00, "p1", 2);
+const item2 = new OrderItem("11", "Caderno", 50.00, "p2", 1);
 const order = new Order("1", "125", [item1, item2]);
